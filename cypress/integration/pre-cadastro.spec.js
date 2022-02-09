@@ -14,8 +14,8 @@ describe('Funcionalidade Pre Cadastro', () => {
 
         cy.get('.woocommerce-MyAccount-navigation-link--edit-account > a').click()
 
-        cy.get('#account_first_name').type('Leslie')
-        cy.get('#account_last_name').type('teste')
+        cy.get('#account_first_name').type(faker.name.firstName())
+        cy.get('#account_last_name').type(faker.name.lastName())
         cy.get('.woocommerce-Button').click()
 
         cy.get('.woocommerce-message').should('contain','Detalhes da conta modificados com sucesso.')
