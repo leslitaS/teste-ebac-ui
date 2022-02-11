@@ -32,4 +32,13 @@ describe('Funcionalidade Pagina de produtos', () => {
         
     });
     
+    it('Deve adicionar produtos ao carrinho - Usando comando Customizado', () => {
+        
+        cy.addProdutos('Argus All-Weather Tank','XL','Gray',3)
+    });
+
+    it('Deve adicionar produtos ao carrinho - Usando comando Customizado', () => {
+        
+        cy.addProdutos('Ariel Roll Sleeve Sweatshirt','S','Green',5)
+    });
 });
